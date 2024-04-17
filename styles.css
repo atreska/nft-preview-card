@@ -20,7 +20,7 @@ body {
     align-items: center;
     max-height: 90vh;
     width: 90%;
-    max-width: 308px;
+    max-width: 290px;
     padding: .8em 0;
 
     border-radius: 1em;
@@ -35,9 +35,34 @@ body {
     padding: .6em .2em;
 }
 
+.picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+}
+
+.anchor:hover::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .5em;
+
+}
+
 .main-picture {
     width: 100%;
-    border-radius: 1em;
+    border-radius: .5em;
+    display: block;
 }
 
 h1 {
